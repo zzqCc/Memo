@@ -26,7 +26,6 @@
 
         <activity
             android:name=".ContactActivity">
-
         </activity>
 
         <activity
