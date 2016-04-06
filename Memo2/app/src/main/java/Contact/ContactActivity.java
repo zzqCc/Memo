@@ -1,4 +1,4 @@
-package com.example.lx.memo;
+package Contact;
 
 /**
  * Created by lx on 2016/4/4.

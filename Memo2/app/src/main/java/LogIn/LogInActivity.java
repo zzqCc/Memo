@@ -1,4 +1,4 @@
-package com.example.lx.memo;
+package LogIn;
 
 /**
  * Created by lx on 2016/4/4.
