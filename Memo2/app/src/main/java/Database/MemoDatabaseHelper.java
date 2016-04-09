@@ -11,14 +11,12 @@ public class MemoDatabaseHelper extends SQLiteOpenHelper {
 
     private Context memoContext;
     public static final String CREATE_MEMO = "CREATE TABLE memo("
-            + "memo_id INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + "year INTEGER,"       //changeable
-            + "month INTEGER,"
-            + "day INTEGER,"
+            + "_id INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + "send_day TEXT,"
             + "content TEXT NOT NULL,"
-            + "Dyear INTEGER,"
-            + "Dmonth INTEGER,"
-            + "Dday INTEGER,"
+            + "title TEXT"
+            + "d_day TEXT,"
+            + "is_completed BOOLEAN DEFAULT 0,"
             + "from_groupId INTEGER,"
             + "from_personId INTEGER);";
 

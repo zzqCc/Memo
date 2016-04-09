@@ -12,7 +12,7 @@ public class ContactDatabaseHelper extends SQLiteOpenHelper {
     private Context contactContext;
 
     public final static String CREATE_CONTACT = "CREATE TABLE contact("
-            + "contact_id INTEGER UNIQUE AUTOINCREMENT,"
+            + "_id INTEGER UNIQUE AUTOINCREMENT,"
             + "name TEXT,"
             + "is_friend BOOLEAN);";
 

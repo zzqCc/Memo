@@ -19,19 +19,7 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="Edit.EditActivity">
-
-        </activity>
-
-        <activity
-            android:name="Contact.ContactActivity">
-
-        </activity>
-
-        <activity
-            android:name="Memo.MemoActivity">
-
+        <activity android:name="Memo.memoActivity">
         </activity>
 
 
