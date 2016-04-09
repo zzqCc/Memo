@@ -84,9 +84,30 @@ public class EdActivity extends Activity {
         chooseTime.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                Intent ct = new Intent(EdActivity.this , choosetime.class);
-                startActivityForResult(ct , 1);
-                return true;
+                switch (event.getAction()) {
+
+                    case MotionEvent.ACTION_DOWN:
+                    {
+                        Intent ct = new Intent(EdActivity.this , choosetime.class);
+                        startActivityForResult(ct , 1);
+                        break;
+                    }
+                    case MotionEvent.ACTION_MOVE:
+                    {
+                        //移动事件发生后执行代码的区域
+                        break;
+                    }
+                    case MotionEvent.ACTION_UP:
+                    {
+                        //松开事件发生后执行代码的区域
+                        break;
+                    }
+
+                    default:
+
+                        break;
+                }
+                return false;
             }
         });
 
