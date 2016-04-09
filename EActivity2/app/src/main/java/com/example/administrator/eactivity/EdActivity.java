@@ -1,5 +1,6 @@
 package com.example.administrator.eactivity;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -18,12 +19,11 @@ import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-public class EdActivity extends AppCompatActivity {
+public class EdActivity extends Activity {
 
     private Button tt;
     private Button add;
     private EditText chooseTime;
-    private Button chtt;
 
 
     @Override
@@ -31,7 +31,6 @@ public class EdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ed);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         add = (Button) findViewById(R.id.button);
         tt = (Button) findViewById(R.id.TouToSend);
         chooseTime = (EditText) findViewById(R.id.editTextTime);
@@ -86,7 +85,7 @@ public class EdActivity extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 Intent ct = new Intent(EdActivity.this , choosetime.class);
-                startActivity(ct);
+                startActivityForResult(ct , 1);
                 return true;
             }
         });
@@ -105,7 +104,8 @@ public class EdActivity extends AppCompatActivity {
             // Inflate the menu; this adds items to the action bar if it is present.
             getMenuInflater().inflate(R.menu.menu_ed, menu);
             return true;
-        }
+        } // end function onCreateOptionsMenu
+
 
         @Override
         public boolean onOptionsItemSelected (MenuItem item){
@@ -120,6 +120,29 @@ public class EdActivity extends AppCompatActivity {
             }
 
             return super.onOptionsItemSelected(item);
-        } }
+        } // end function onOptionsItemSelected
+
+
+    @Override
+    protected void onActivityResult(int requestCode , int resultCode , Intent data) {
+        switch(requestCode) {
+            case 1 :
+                if (resultCode == RESULT_OK) {
+                    String returnData = data.getStringExtra("data_return");
+                    chooseTime.setText(returnData);
+                } // end if
+                break;
+            default:
+
+        } // end switch
+    } // end function onActivityResult
+
+
+
+
+
+
+
+} // end class EdActivity
 
 

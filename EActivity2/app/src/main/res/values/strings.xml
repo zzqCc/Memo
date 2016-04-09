@@ -10,4 +10,5 @@
     <string name="TimeHint">请点击以选择提醒时间</string>
     <string name="BodyHint">请输入事务正文（不要超过7行）</string>
     <string name="TouToSend">Send</string>
+    <string name="yeah">确定</string>
 </resources>
