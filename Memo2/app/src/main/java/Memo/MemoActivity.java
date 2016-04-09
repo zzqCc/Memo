@@ -15,12 +15,13 @@ import Database.MemoDatabaseHelper;
  */
 public class memoActivity extends Activity {
     private MemoDatabaseHelper dbHelper;
+    private SQLiteDatabase db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memo);
-        dbHelper = new MemoDatabaseHelper(this,"Memo_main.db",null,2);
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        dbHelper = new MemoDatabaseHelper(this,"Memo_main.db",null,1);
+        db = dbHelper.getWritableDatabase();
         //-----------------------------------------------------------------------------
         //for test
         String sqltest = "insert into memo (title,content," +
@@ -40,6 +41,12 @@ public class memoActivity extends Activity {
         listView.setAdapter(memoCursorAdapter);
 
 
+    }
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+        if( db!=null && db.isOpen() )
+            db.close();
     }
 
 

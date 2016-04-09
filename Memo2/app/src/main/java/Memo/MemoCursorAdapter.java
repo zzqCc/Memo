@@ -31,7 +31,7 @@ public class MemoCursorAdapter extends CursorAdapter {
 
         String sqltitle = cursor.getString(cursor.getColumnIndexOrThrow("title"));
         String sqlcontent = cursor.getString(cursor.getColumnIndexOrThrow("content"));
-        String sqldate = cursor.getColumnName(cursor.getColumnIndexOrThrow("d_day"));
+        String sqldate = cursor.getString(cursor.getColumnIndexOrThrow("d_day"));
 
         title.setText(sqltitle);
         content.setText(sqlcontent);

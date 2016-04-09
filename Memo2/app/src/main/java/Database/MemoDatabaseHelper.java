@@ -19,6 +19,14 @@ public class MemoDatabaseHelper extends SQLiteOpenHelper {
             + "is_completed BOOLEAN DEFAULT 0,"
             + "from_groupId INTEGER,"
             + "from_personId INTEGER);";
+    public  static final String CREATE_CONTACT = "CREATE TABLE contact(" +
+            "_id INTEGER PRIMARY KEY AUTOINCREMENT," +
+            "contact_id INTEGER," +
+            "name TEXT);";
+    public static final String CREATE_RELATION = "CREATE TABLE relation(" + //!public!
+            "people_id INTEGER PRIMARY KEY AUTOINCREMENT);"
+
+
 
     public MemoDatabaseHelper(Context context, String name,
                               SQLiteDatabase.CursorFactory factory, int version){
@@ -28,6 +36,8 @@ public class MemoDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db){
         db.execSQL(CREATE_MEMO);
+        db.execSQL(CREATE_CONTACT);
+        db.execSQL(CREATE_RELATION);
     }
 
     @Override
