@@ -22,6 +22,7 @@ public class contactGroupActivity extends Activity {
         setContentView(R.layout.activity_contact_group);
         dbHelper = new MemoDatabaseHelper(this,"Memo_main.db",null,1);
         db = dbHelper.getWritableDatabase();
+
         String sql = "SELECT * FROM group ";
         Cursor cursor = db.rawQuery(sql,null);
         ListView listView = (ListView) findViewById(R.id.contact_people_listview);

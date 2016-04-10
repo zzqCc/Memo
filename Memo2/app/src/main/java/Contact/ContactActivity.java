@@ -22,7 +22,8 @@ public class contactActivity extends Activity{
         setContentView(R.layout.activity_contact);
         dbHelper = new MemoDatabaseHelper(this,"Memo_main.db",null,1);
         db = dbHelper.getWritableDatabase();
-        String sql = "SELECT * FROM contact WHERE is_friend==1;";//
+
+        String sql = "SELECT * FROM contact WHERE "/*+"is_friend==1"*/+";";//
         Cursor cursor = db.rawQuery(sql,null);
         ListView listView = (ListView) findViewById(R.id.contact_people_listview);
         ContactCursorAdapter contactCursorAdapter = new ContactCursorAdapter(this,cursor,0);//flags
