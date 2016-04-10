@@ -13,7 +13,7 @@ import Database.MemoDatabaseHelper;
 /**
  * Created by lx on 2016/4/4.
  */
-public class memoActivity extends Activity {
+public class MemoActivity extends Activity {
     private MemoDatabaseHelper dbHelper;
     private SQLiteDatabase db;
     @Override

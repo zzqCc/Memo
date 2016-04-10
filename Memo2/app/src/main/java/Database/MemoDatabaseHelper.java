@@ -24,7 +24,7 @@ public class MemoDatabaseHelper extends SQLiteOpenHelper {
             "contact_id INTEGER," +
             "name TEXT);";
     public static final String CREATE_RELATION = "CREATE TABLE relation(" + //!public!
-            "people_id INTEGER PRIMARY KEY AUTOINCREMENT);"
+            "people_id INTEGER PRIMARY KEY AUTOINCREMENT);";
 
 
 
