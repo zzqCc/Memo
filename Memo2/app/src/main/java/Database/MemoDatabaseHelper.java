@@ -24,7 +24,11 @@ public class MemoDatabaseHelper extends SQLiteOpenHelper {
             "contact_id INTEGER," +
             "name TEXT);";
     public static final String CREATE_RELATION = "CREATE TABLE relation(" + //!public!
-            "people_id INTEGER PRIMARY KEY AUTOINCREMENT);"
+            "_id INTEGER PRIMARY KEY AUTOINCREMENT," +
+            "person_name TEXT);" ;
+    public static final String CREATE_GROUP = "CREATE TABLE group(" +
+            "_id INTEGER PRIMARY KEY AUTOINCREMENT," +
+            "group_name TEXT);";
 
 
 
@@ -38,6 +42,7 @@ public class MemoDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_MEMO);
         db.execSQL(CREATE_CONTACT);
         db.execSQL(CREATE_RELATION);
+        db.execSQL(CREATE_GROUP);
     }
 
     @Override
