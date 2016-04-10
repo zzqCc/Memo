@@ -11,6 +11,8 @@ import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.R;
+
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
     private ImageButton reminder;
     private ImageButton friends;

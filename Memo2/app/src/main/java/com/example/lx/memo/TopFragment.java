@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.R;
+
 /**
  * Created by ccccc on 2016/4/10.
  */

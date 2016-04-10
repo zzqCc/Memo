@@ -1,4 +1,4 @@
-package Memo;
+package com.example.memo;
 
 import android.app.Activity;
 import android.database.Cursor;
@@ -6,9 +6,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.example.lx.memo.R;
 
-import Database.MemoDatabaseHelper;
+import com.example.R;
+import com.example.database.MemoDatabaseHelper;
 
 /**
  * Created by lx on 2016/4/4.

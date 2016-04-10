@@ -1,4 +1,4 @@
-package Edit;
+package com.example.edit;
 
 /**
  * Created by ccccc on 2016/4/10.
@@ -16,7 +16,7 @@ import android.widget.TimePicker;
 import android.widget.DatePicker.OnDateChangedListener;
 import android.widget.Toast;
 
-import com.example.lx.memo.R;
+import com.example.R;
 
 
 public class choosetime extends Activity {

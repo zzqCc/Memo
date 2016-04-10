@@ -1,4 +1,4 @@
-package Contact;
+package com.example.contact;
 
 /**
  * Created by lx on 2016/4/9.

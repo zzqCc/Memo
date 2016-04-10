@@ -1,4 +1,4 @@
-package Contact;
+package com.example.contact;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -9,7 +9,8 @@ import android.widget.CursorAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.lx.memo.R;
+import com.example.R;
+
 
 /**
  * Created by lx on 2016/4/9.
