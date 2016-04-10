@@ -5,7 +5,12 @@
     android:layout_height="fill_parent">
 
 
-
+    <EditText
+        android:id="@+id/datEt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:editable="false"/>
 
     <EditText
         android:id="@+id/timeEt"
@@ -13,6 +18,12 @@
         android:layout_height="wrap_content"
         android:cursorVisible="false"
         android:editable="false"/>
+
+    <DatePicker
+        android:id="@+id/dpPicker"
+        android:calendarViewShown="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TimePicker
         android:layout_width="wrap_content"
@@ -27,6 +38,6 @@
         android:text="@string/yeah"
         android:id="@+id/yeah"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="280dp" />
+        android:layout_marginTop="100dp" />
 
 </LinearLayout>
