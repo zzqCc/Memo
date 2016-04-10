@@ -2,6 +2,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
+
+    <fragment
+        android:name="com.example.lx.memo.TopFragment"
+        android:id="@+id/top"
+        android:layout_height="50dp"
+        android:layout_width="match_parent" />
+    <fragment
+        android:name="com.example.lx.memo.BottomFragment"
+        android:id="@+id/bottom"
+        android:layout_below="@id/top"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" />
+    <FrameLayout
+        android:id="@+id/id_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/top"
+        android:layout_below="@id/bottom" />
 
 </LinearLayout>
