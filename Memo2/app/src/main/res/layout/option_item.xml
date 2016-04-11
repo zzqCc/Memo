@@ -1,75 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="150dp"
+     android:layout_width="150dp"
+    android:orientation="vertical"
     android:layout_height="wrap_content"
-    android:layout_gravity="right">
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
 
         android:background="#7b7ffa89">
-        <ImageView
+       <!-- <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@mipmap/hisrory"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter" />-->
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/history_item"
-            android:text="历史"/>
+            android:text="历史"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="#7b7ffa89">
-        <ImageView
+        <!--<ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@mipmap/add"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter" />-->
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/add_item"
-            android:text="添加"/>
+            android:text="添加"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="#7b7ffa89">
-        <ImageView
+       <!-- <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@mipmap/edit"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter" />-->
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/edit_item"
-            android:text="编辑"/>
+            android:text="编辑"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#7b7ffa89">
-        <ImageView
+        <!--<ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@mipmap/setting"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter" />-->
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/setting_item"
-            android:text="设置"/>
+            android:text="设置"
+            />
     </LinearLayout>
-
+<!--<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/optionItemImage"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/optionItemText"/>-->
 </LinearLayout>
