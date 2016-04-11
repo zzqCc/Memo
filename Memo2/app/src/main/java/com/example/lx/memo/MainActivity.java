@@ -34,11 +34,19 @@ public class MainActivity extends AppCompatActivity {
         final PopupWindow pw= new PopupWindow(vPopupWindow,600,700);
         pw.setFocusable(true);
         pw.setTouchable(true);
+        Button button1=(Button) vPopupWindow.findViewById(R.id.add_item);
+        button1.setOnClickListener(new View.OnClickListener() {//点击历史
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(MainActivity.this, "历史", Toast.LENGTH_SHORT).show();
+            }
+        });
         Button button2=(Button) vPopupWindow.findViewById(R.id.add_item);
         button2.setOnClickListener(new View.OnClickListener() {//点击历史
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "添加", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "添加联系人", Toast.LENGTH_SHORT).show();
             }
         });
         Button button3=(Button) vPopupWindow.findViewById(R.id.edit_item);
@@ -56,5 +64,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         pw.showAsDropDown(parent);
+        }
+
     }
-}

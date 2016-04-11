@@ -16,7 +16,8 @@
         android:layout_height="50dp"
         android:layout_weight="1"
         android:id="@+id/friends"
-        android:src="@mipmap/friends"
+        android:src="@mipmap/contacts"
         android:scaleType="fitCenter"
+
         android:layout_margin="5dp"/>
 </LinearLayout>

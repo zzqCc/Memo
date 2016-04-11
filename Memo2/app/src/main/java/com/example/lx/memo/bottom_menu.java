@@ -21,13 +21,13 @@ public class bottom_menu extends LinearLayout {
         button1.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "you click reminder", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "备忘录", Toast.LENGTH_SHORT).show();
             }
         });
         button2.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"you click friends",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),"联系人",Toast.LENGTH_SHORT).show();
             }
         });
     }
