@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showPopupWindow(MainActivity.this,findViewById(R.id.option));
-                Toast.makeText(MainActivity.this, "click", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"click", Toast.LENGTH_SHORT).show();
             }
         });
     }
