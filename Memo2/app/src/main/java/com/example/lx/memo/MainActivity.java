@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     {
 
         super.onCreate(saveInstanceState);
+
         setContentView(R.layout.activity_main);
         final Button button = (Button) findViewById(R.id.option);
         button.setOnClickListener(new View.OnClickListener() {//点击选项

@@ -8,7 +8,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".LogIn"
             android:theme="@style/AppTheme.NoActionBar">
 
             <intent-filter>
@@ -17,22 +17,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
- <!--       <activity
-            android:name="Edit.EditActivity">
-
-        </activity>
-
         <activity
-            android:name="Contact.ContactActivity">
+            android:name=".MainActivity"
+            android:label="main"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
-        </activity>
 
-        <activity
-            android:name="Memo.MemoActivity">
 
-        </activity>
-        -->
 
 
     </application>
