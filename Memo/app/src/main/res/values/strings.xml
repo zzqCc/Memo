@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="toer">发送人</string>
+    <string name="add">+</string>
+    <string name="mainidea">主题</string>
+    <string name="time">提醒时间</string>
+    <string name="textbody">正文</string>
+    <string name="MainideaHint">请输入主题</string>
+    <string name="TimeHint">请点击以选择提醒时间</string>
+    <string name="BodyHint">请输入事务正文（不要超过7行）</string>
+    <string name="TouToSend">Send</string>
+    <string name="yeah">确定</string>
+</resources>
