@@ -108,7 +108,11 @@ public class MemoDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db,int oldVersion, int newVersion){
-
+        db.execSQL("drop table if exists memo");
+        db.execSQL("drop table if exists contact");
+        db.execSQL("drop table if exists relation");
+        db.execSQL("drop table if exists group");
+        onCreate(db);
     }
 
 }

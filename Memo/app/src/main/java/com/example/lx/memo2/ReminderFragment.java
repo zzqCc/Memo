@@ -6,8 +6,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SimpleAdapter;
 
 import com.example.R;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by ccccc on 2016/4/13.
@@ -19,4 +25,5 @@ public class ReminderFragment extends Fragment {
                               @Nullable Bundle savedInstanceState) {
               return inflater.inflate(R.layout.fragment_reminder, container, false);
     }
+
 }

@@ -20,7 +20,7 @@ public class MemoActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memo);
-        dbHelper = new MemoDatabaseHelper(this,"Memo_main.db",null,1);
+        dbHelper = new MemoDatabaseHelper(this,"Memo_main.db",null,2);
         db = dbHelper.getWritableDatabase();
 
         String sql = "SELECT * FROM memo WHERE d_day>datetime('now','localtime') AND " +
