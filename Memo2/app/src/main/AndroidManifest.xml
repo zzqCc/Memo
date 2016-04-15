@@ -6,7 +6,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:label="Memo">
         <activity
             android:name=".LogIn"
             android:theme="@style/AppTheme.NoActionBar">
@@ -21,6 +22,10 @@
             android:name=".MainActivity"
             android:label="main"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Setting"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
 
 
 

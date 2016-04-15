@@ -2,21 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#564dfa84">
-    <ImageButton
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_weight="1"
-        android:id="@+id/reminder"
-        android:src="@mipmap/remainder"
-        android:scaleType="fitCenter"
-        />
-    <ImageButton
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_weight="1"
-        android:id="@+id/friends"
-        android:src="@mipmap/contacts"
-        android:scaleType="fitCenter"
-        />
+    android:background="#000201">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:id="@+id/reminder"
+            android:src="@mipmap/remainder"
+            android:scaleType="fitCenter"
+            android:background="@drawable/selector"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:id="@+id/friends"
+            android:src="@mipmap/contacts"
+            android:scaleType="fitCenter"
+            android:background="@drawable/selector"
+            />
+
+
 </LinearLayout>

@@ -23,6 +23,7 @@
             android:layout_width="0dp"
             />
         <ImageButton
+            android:id="@+id/users"
             android:layout_height="match_parent"
             android:layout_width="50dp"
             android:src="@mipmap/pull"
@@ -75,12 +76,14 @@
             android:textSize="20sp"
             android:layout_marginLeft="10sp"
             android:clickable="true"
-            android:textColor="#094da0" />
+            android:textColor="#094da0"
+            android:background="@drawable/text_seletor"/>
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:autoText="false" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -104,7 +107,8 @@
             android:layout_margin="5dp"
             android:textSize="20sp"
             android:clickable="true"
-            android:textColor="#094da0" />
+            android:textColor="#094da0"
+            android:background="@drawable/text_seletor"/>
     </LinearLayout>
     <Button
         android:id="@+id/log_in"
