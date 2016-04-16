@@ -4,15 +4,18 @@ package com.example.memo;
  * Created by ccccc on 2016/4/14.
  */
 public class Memo {
-    private String title;
-    private String date;
+    //表名
+    public static final String TABLE="Memo";
 
-    public Memo(String title,String date){
-        this.title = title;
-        this.date = date;
-    }
+    //表的各域名
+    public static final String KEY_ID="_id";
+    public static final String KEY_TITLE="title";
+    public static final String KEY_DATE="d_day";
+    public static final String KEY_CONTENT="content";
 
-    public String getTitle(){ return title; }
-
-    public String getDate(){ return date; }
+    //属性
+    public int memo_ID;
+    public String memo_title;
+    public String date;
+    public String memo_content;
 }

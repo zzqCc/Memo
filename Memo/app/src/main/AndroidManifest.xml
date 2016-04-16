@@ -24,6 +24,7 @@
         <activity android:name=".contact.ContactActivity"/>
         <activity android:name=".contact.ChooseContact"/>
         <activity android:name=".memo.MemoActivity"/>
+        <activity android:name=".memo.MemoDetail"/>
     </application>
 
 </manifest>

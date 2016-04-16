@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.example.R;
 import com.example.edit.EditActivity;
+import com.example.memo.MemoActivity;
 
 public class MainActivity extends FragmentActivity implements OnClickListener{
 
@@ -125,6 +126,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         switch(v.getId()){
             case R.id.add:
                 Toast.makeText(this,"clicked add",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, MemoActivity.class);
+                startActivity(intent);
                 break;
             case R.id.edit:
                 Toast.makeText(this,"clicked edit",Toast.LENGTH_SHORT).show();
