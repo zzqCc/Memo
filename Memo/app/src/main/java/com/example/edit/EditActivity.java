@@ -27,7 +27,7 @@ import com.example.contact.ContactActivity;
 public class EditActivity extends Activity {
 
     private Button tt;
-    private Button add;
+    private EditText editText;
     private EditText chooseTime;
     private TextView sender;
 
@@ -36,8 +36,8 @@ public class EditActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
-       //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        add = (Button) findViewById(R.id.button);
+
+
         tt = (Button) findViewById(R.id.TouToSend);
         chooseTime = (EditText) findViewById(R.id.editTextTime);
         sender = (TextView) findViewById(R.id.sender);
@@ -46,7 +46,7 @@ public class EditActivity extends Activity {
 //*************************************************************************//
 //add the receivers begin
 
-        add.setOnClickListener(new View.OnClickListener() {
+        sender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(EditActivity.this, "You will choose the receivers.", Toast.LENGTH_SHORT).show();

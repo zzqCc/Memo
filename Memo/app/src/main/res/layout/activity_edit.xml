@@ -26,22 +26,15 @@
             android:text="发送人"
             android:gravity="center"
             android:id="@+id/textView"
-
-            />
-
-        <Button
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/receivers"
-            android:id="@+id/button"
-            />
-
+            android:textColor="#010101" />
         <TextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/sender"
-            android:textSize="30sp"
+            android:textSize="20sp"
+            android:hint="请选择联系人"
+            android:gravity="center_vertical|left"
             />
     </LinearLayout>
     <LinearLayout
@@ -55,7 +48,7 @@
             android:text="主题"
             android:gravity="center"
             android:id="@+id/topicTextView"
-            />
+            android:textColor="#010101" />
 
         <EditText
             android:layout_width="0dp"
@@ -75,7 +68,8 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="提醒时间"
-            android:id="@+id/remindTime"/>
+            android:id="@+id/remindTime"
+            android:textColor="#010101" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -94,7 +88,7 @@
             android:text="正文"
             android:gravity="center"
             android:id="@+id/content"
-            />
+            android:textColor="#010101" />
 
         <EditText
             android:layout_width="match_parent"
