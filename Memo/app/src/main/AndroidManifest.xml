@@ -25,6 +25,8 @@
         <activity android:name=".contact.ChooseContact"/>
         <activity android:name=".memo.MemoActivity"/>
         <activity android:name=".memo.MemoDetail"/>
+        <activity android:name=".memo.Popup"/>
+        <activity android:name=".memo.Setting"/>
     </application>
 
 </manifest>

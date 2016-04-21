@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:id="@+id/history_item"
+        android:text="历史"
+        android:drawableLeft="@mipmap/history"
+        android:background="#7b7ffa89"
+        android:layout_margin="1dp"/>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:id="@+id/add_item"
+        android:text="添加联系人"
+        android:drawableLeft="@mipmap/add"
+        android:background="#7b7ffa89"
+        android:layout_margin="1dp"/>
+
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:id="@+id/edit_item"
+        android:text="编辑"
+        android:drawableLeft="@mipmap/edit"
+        android:background="#7b7ffa89"
+        android:layout_margin="1dp"/>
+
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:id="@+id/setting_item"
+        android:text="设置"
+        android:drawableLeft="@mipmap/setting"
+        android:background="#7b7ffa89"
+        android:layout_margin="1dp"
+        />
+
+
+</LinearLayout>
