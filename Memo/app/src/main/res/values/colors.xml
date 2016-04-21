@@ -7,4 +7,7 @@
     <color name="SendWords">#000000</color>
     <color name="SeB">#FF6081</color>
     <color name="Sender">#303D9D</color>
+    <color name="press">#58a86430</color>
+    <color name="unpress">#020202</color>
+    <color name="text_unpress">#ffffff</color>
 </resources>

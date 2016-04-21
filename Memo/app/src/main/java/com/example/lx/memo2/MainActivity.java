@@ -23,11 +23,6 @@ import com.example.memo.MemoActivity;
 import com.example.memo.Popup;
 
 public class MainActivity extends FragmentActivity implements OnClickListener{
-
-    private ImageButton history;
-    private ImageButton setting;
-    private ImageButton edit;
-    private ImageButton add;
     private Button option;
 
     private LinearLayout ll_reminder;

@@ -75,7 +75,8 @@
             android:textSize="20sp"
             android:layout_marginLeft="10sp"
             android:clickable="true"
-            android:textColor="#094da0" />
+            android:textColor="#094da0"
+            android:background="@drawable/text_seletor"/>
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
@@ -104,7 +105,8 @@
             android:layout_margin="5dp"
             android:textSize="20sp"
             android:clickable="true"
-            android:textColor="#094da0" />
+            android:textColor="#094da0"
+            android:background="@drawable/text_seletor"/>
     </LinearLayout>
     <Button
         android:id="@+id/log_in"

@@ -36,7 +36,7 @@ public class EditActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         add = (Button) findViewById(R.id.button);
         tt = (Button) findViewById(R.id.TouToSend);
         chooseTime = (EditText) findViewById(R.id.editTextTime);

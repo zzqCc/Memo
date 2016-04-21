@@ -1,27 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.example.lx.memo2.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <android.support.design.widget.AppBarLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:id="@+id/TouToSend"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="80dp"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:text="发送人"
+            android:gravity="center"
+            android:id="@+id/textView"
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/receivers"
+            android:id="@+id/button"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/sender"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="80dp"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:text="主题"
+            android:gravity="center"
+            android:id="@+id/topicTextView"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/editTextMain"
+            android:hint="请输入主题"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="80dp"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="提醒时间"
+            android:id="@+id/remindTime"/>
+        <EditText
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextTime"
+            android:hint="@string/TimeHint"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="80dp"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:text="正文"
+            android:gravity="center"
+            android:id="@+id/content"
+            />
 
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_edit" />
-
-
-</android.support.design.widget.CoordinatorLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextBody"
+            android:hint="@string/BodyHint"
+            android:maxLines="7"/>
+    </LinearLayout>
+</LinearLayout>
