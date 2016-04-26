@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:orientation="vertical"
-    android:layout_height="wrap_content"
-    >
+    android:layout_height="wrap_content">
+
 
     <Button
         android:layout_width="150dp"
@@ -12,10 +12,16 @@
         android:id="@+id/history_item"
         android:text="历史"
         android:drawableLeft="@mipmap/history"
-        android:background="#7b7ffa89"
-        android:layout_margin="1dp"/>
+        android:background="@drawable/button_seletor"
+        android:textColor="#ffffff"
 
+        />
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_gravity="right"/>
     <Button
         android:layout_width="150dp"
         android:layout_height="50dp"
@@ -23,10 +29,14 @@
         android:id="@+id/add_item"
         android:text="添加联系人"
         android:drawableLeft="@mipmap/add"
-        android:background="#7b7ffa89"
-        android:layout_margin="1dp"/>
-
-
+        android:background="@drawable/button_seletor"
+        android:textColor="#ffffff"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_gravity="right"/>
 
     <Button
         android:layout_width="150dp"
@@ -35,10 +45,14 @@
         android:id="@+id/edit_item"
         android:text="编辑"
         android:drawableLeft="@mipmap/edit"
-        android:background="#7b7ffa89"
-        android:layout_margin="1dp"/>
-
-
+        android:background="@drawable/button_seletor"
+        android:textColor="#ffffff"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_gravity="right"/>
 
     <Button
         android:layout_width="150dp"
@@ -47,8 +61,9 @@
         android:id="@+id/setting_item"
         android:text="设置"
         android:drawableLeft="@mipmap/setting"
-        android:background="#7b7ffa89"
-        android:layout_margin="1dp"
+        android:background="@drawable/button_seletor"
+        android:textColor="#ffffff"
+
         />
 
 
